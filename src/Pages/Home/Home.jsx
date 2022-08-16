@@ -34,6 +34,7 @@ const Home = () => {
                 }
             })
     }, [userProfile]);
+    
     // ADD POST
     const handleAddPost = () => {
         setModal(!modal)

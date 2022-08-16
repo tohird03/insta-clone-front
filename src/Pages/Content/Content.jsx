@@ -32,11 +32,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    return
-                } else {
-                    setUser(data)
-                }
+                setUser(data)
             })
     }, [decoded]);
 
@@ -50,11 +46,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    return
-                } else {
-                    setImgs(data)
-                }
+                setImgs(data)
             })
     }, [img]);
 
@@ -68,11 +60,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    return
-                } else {
-                    setAllUser(data)
-                }
+                setAllUser(data)
             })
     }, [allUser]);
 
@@ -92,11 +80,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    return
-                } else {
-                    setUserProfile(data)
-                }
+                setUserProfile(data)
             })
     }
 
@@ -114,12 +98,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    console.log(data);
-                    return
-                } else {
-                    setLikesUsers(data);
-                }
+                setLikesUsers(data);
             })
         setModal(!modal)
 
@@ -143,12 +122,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    console.log(data);
-                    return
-                } else {
-                    setComments(data);
-                }
+                setComments(data);
             })
 
     }
@@ -171,12 +145,7 @@ const Content = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    if (!data) {
-                        console.log(data);
-                        return
-                    } else {
-                        setComments(data);
-                    }
+                    setComments(data);
                 })
 
             setGetPostId(postId)
@@ -197,12 +166,7 @@ const Content = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    console.log(data);
-                    return
-                } else {
-                    console.log(data);
-                }
+                console.log(data);
             })
     }
 
