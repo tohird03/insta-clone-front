@@ -41,22 +41,22 @@ const Content = () => {
     }, [decoded]);
 
     // ALL POST
-    useEffect(() => {
-        fetch("http://localhost:9000/posts", {
-            method: "GET",
-            headers: {
-                "Content-type": "application/json"
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (!data) {
-                    return
-                } else {
-                    setImgs(data)
-                }
-            })
-    }, [img]);
+    // useEffect(() => {
+    //     fetch("http://localhost:9000/posts", {
+    //         method: "GET",
+    //         headers: {
+    //             "Content-type": "application/json"
+    //         }
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             if (!data) {
+    //                 return
+    //             } else {
+    //                 setImgs(data)
+    //             }
+    //         })
+    // }, [img]);
 
     // ALL USER
     useEffect(() => {
