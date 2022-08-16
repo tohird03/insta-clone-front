@@ -25,16 +25,11 @@ const Home = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if (!data) {
-                    console.log(data);
-                    return
-                } else {
-                    setLogin(null)
-                    setUserProfile(data)
-                }
+                setLogin(null)
+                setUserProfile(data)
             })
     }, [userProfile]);
-    
+
     // ADD POST
     const handleAddPost = () => {
         setModal(!modal)
