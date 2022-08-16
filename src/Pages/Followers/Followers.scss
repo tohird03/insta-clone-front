@@ -1,0 +1,12 @@
+.nav-follow {
+    display: flex;
+    background-color: bisque;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    li {
+        a {
+            font-size: 16px;
+        }
+    }
+}

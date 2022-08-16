@@ -1,0 +1,705 @@
+.content__container {
+  // margin-top: 50px;
+  max-height: 90vh;
+  overflow: auto;
+}
+/* Umumiy ota style */
+.content__container::-webkit-scrollbar {
+  width: 1px;
+}
+
+.name-accounts {
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.likes_body {
+  max-height: 500px;
+  overflow: auto;
+}
+
+// /* scrolning uzini stylesi */
+// .content__container::-webkit-scrollbar-track {
+//   -webkit-border-radius: 10px;
+//   background-color:#fff;
+//   border-radius: 10px;
+// }
+
+// /* scroll ichidagi scrolcha style */
+// .content__container::-webkit-scrollbar-thumb {
+//   -webkit-border-radius: 10px;
+//   border-radius: 10px;
+//   background:#666;
+// }
+
+.box-container img {
+  width:500px;
+  height: 500px;
+}
+
+.content__main {
+  height: 100%;
+}
+
+.overlayx {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  z-index: 1000;
+}
+
+.name-account {
+  // width: 500px;
+  height:70px;
+  background-color:pink;
+  position:relative;
+  background-color:#FFFFFF;
+  border: 1px solid #EDEDED;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.likes__btn {
+  max-width: 24px;
+  max-height: 24px;
+  border: none;
+}
+
+.name-account .fa-circle {
+  font-size:2rem;
+  position: absolute;
+  top:20px;
+  left:20px;
+}
+
+.interactions {
+  width: 500px;
+  height:70px;
+  background-color:pink;
+  background-color:#FFFFFF;
+  border: 1px solid #EDEDED;
+  margin:0;
+  padding:0;
+}
+
+.profile_user {
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+}
+
+i {
+  font-size:2rem;
+}
+
+.interactions-icons {
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  margin-left:1em;
+  gap:1.2rem;
+}
+
+.comment {
+  margin-right: auto;
+  z-index: 999;
+}
+
+.comment_userName {
+	font-weight: bold;
+}
+
+.comment-text {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+
+button, input[type="search"], input[type="text"] {
+	border: none;
+	outline: none;
+}
+
+input[type="checkbox"] {
+	margin: 7px;
+	margin-right: 15px;
+}
+
+.leftPanel {
+	position: relative;
+	display: inline-block;
+	left: 0px;
+	width: 320px;
+	height: 100vh;
+	float: left;
+	background: #FFF;
+	border-right: 1px solid #DDD;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	// background: #FFF;
+  padding: 20px;
+}
+
+.trigger {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 20px 15px;
+	margin-bottom: 0px;
+	color: #BBB;
+	cursor: pointer;
+	opacity: 0.6;
+	background: none;
+}
+
+.trigger:hover {
+	opacity: 1;
+}
+
+.trigger > svg {
+	width: 24px;
+	height: 24px;
+	fill: #888;
+}
+
+.searchChats {
+	width: calc(100% - 85px);
+	height: 40px;
+	background: #EEE;
+	float: left;
+	padding: 8px;
+	margin-top: 14px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.searchChats:focus {
+	color: #444;
+	border: 2px solid #419fd9;
+	background: rgb(243, 243, 243);
+}
+
+.chats {
+	width: 100%;
+	height: calc(100vh - 70px);
+	float: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.chatButton {
+	float: left;
+	width: 100%;
+	height: 80px;
+	background: #FFF;
+	color: #555;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.chatButton:hover {
+	color: #555;
+	background: #EEE;
+}
+
+.active, .active:hover {
+	color: rgb(0, 0, 0);
+}
+
+.chatInfo {
+	float: left;
+}
+
+.chatInfo p {
+	float: left;
+}
+
+.chatInfo .image {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	background: #DDD url(https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg) no-repeat center;
+	background-size: cover;
+	border-radius: 100%;
+	margin: 13px 13px;
+}
+
+.chatInfo .my-image {
+	background-image: url(https://avatars1.githubusercontent.com/u/21313332?s=460&v=4);
+}
+
+.chatInfo .name {
+	float: left;
+	font-weight: 600;
+	margin-left: 80px;
+	margin-top: 18px;
+}
+
+.chatInfo .message {
+	float: left;
+	clear: left;
+	margin-left: 80px;
+	margin-top: 7px;
+}
+
+.status {
+	width: 60px;
+	height: 100%;
+	position: relative;
+	float: right;
+}
+
+.status .fixed {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	display: none;
+}
+
+div[class~="normal"] > .fixed {
+	display: none;
+}
+
+div[class~="normal"] > .count {
+	right: 10px;
+	bottom: 7px;
+}
+
+div[class~="onTop"] > .fixed {
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: #FFF;
+}
+
+div[class~="onTop"] > .count {
+	right: 49px;
+	bottom: 7px;
+	background: #FFF;
+	color: #419fd9;
+}
+
+.status .count {
+	position: absolute;
+	right: 49px;
+	bottom: 7px;
+	width: auto;
+	height: auto;
+	padding: 7px;
+	border-radius: 20px;
+	color: #222;
+	background: rgba(0, 0, 0, 0.12);
+}
+
+.status .date {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	font-size: 12px;
+}
+
+.status .read {
+	position: absolute;
+	right: 53px;
+	top: 6px;
+}
+
+.rightPanel {
+	float: left;
+  width: 100%;
+	background: #999;
+}
+
+.rightPanel .topBar {
+	position: relative;
+	width: 100%;
+	height: 70px;
+	background: #FFF;
+}
+
+.leftSide {
+	display: inline-block;
+	clear: none;
+}
+
+.leftSide .chatName {
+	float: left;
+	margin-left: 30px;
+	margin-top: 13px;
+	color: #444;
+	font-weight: 600;
+	cursor: default;
+}
+
+.chatName > span {
+	font-size: 12px;
+	font-weight: 500;
+	color: #BBB;
+	margin-left: 10px;
+}
+
+.leftSide .chatStatus {
+	float: left;
+	clear: left;
+	margin-left: 30px;
+	margin-top: 5px;
+	color: #419fd9;
+	font-weight: 300;
+	cursor: default;
+}
+
+.rightSide {
+	display: inline-block;
+	clear: none;
+	float: right;
+	margin-right: 20px;
+}
+
+.tbButton, .otherTools .toolButtons {
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	background: #FFF;
+	color: #888;
+	border-radius: 100%;
+}
+
+.tbButton:hover, .otherTools .toolButtons:hover {
+	color: #555;
+	background: #DDD;
+}
+
+
+/* THE CONVERSATION HISTORY CSS */
+
+.convHistory {
+	float: left;
+	position: relative;
+	width: 100%;
+	height: 500px;
+	background: #333;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.userBg {
+  padding-bottom: 70px;
+	background: url("https://images.unsplash.com/photo-1463058837219-41e13a132b7d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=") 100% center;
+}
+
+.msg {
+	position: relative;
+	width: auto;
+	min-width: 100px;
+	max-width: 80%;
+	height: auto;
+	padding: 25px;
+	padding-bottom: 35px;
+	margin: 20px 15px;
+	margin-bottom: 0px;
+	background: #FFF;
+	border-radius: 7px;
+	clear: both;
+}
+
+.msg:nth-last-child(1) {
+	margin-bottom: 20px;
+}
+
+.msg .timestamp {
+	display: block;
+	position: absolute;
+	right: 10px;
+	bottom: 6px;
+	color: #AAA;
+	user-select: none;
+}
+
+.messageReceived {
+	float: left;
+  width: 80%;
+	background: #FFF;
+}
+
+.messageSent {
+	float: right;
+  width: 80%;
+	background: #effdde;
+}
+
+.messageSent > .timestamp, .messageSent > .readStatus {
+	bottom: 10px;
+	right: 40px;
+	color: darkgreen;
+	user-select: none;
+}
+
+.messageSent > .readStatus {
+	position: absolute;
+	bottom: 10px;
+	right: 12px;
+}
+
+
+/* THE REPLY BAR CSS */
+
+.replyBar {
+	width: 100%;
+	height: 70px;
+	float: left;
+	background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.replyBar .attach {
+	width: 70px;
+	height: 70px;
+  color: #777;
+	background: #FFF;
+	float: left;
+}
+
+.replyBar .attach:hover {
+  color: #555;
+	background: #DDD;
+}
+
+.replyBar .d45 {
+	transform: rotate(45deg);
+	font-size: 32px;
+}
+
+.replyBar .replyMessage {
+	width: calc(100% - 220px);
+	float: left;
+	height: 70px;
+	padding: 0px 8px;
+	font-size: 16px;
+}
+
+.replyBar .otherTools {
+	float: right;
+	width: 120px;
+	height: 70px;
+}
+
+.emojiBar {
+	display: none;
+	position: absolute;
+	width: 325px;
+	height: 200px;
+	padding: 10px;
+	right: 30px;
+	bottom: 80px;
+	border: 2px solid #DDD;
+	border-radius: 3px;
+	background: #FFF;
+}
+
+.emoticonType {
+	width: 100%;
+	height: 50px;
+}
+
+.emoticonType button {
+	width: 105px;
+	height: 36px;
+	font-weight: 600;
+	color: #555;
+	background: none;
+}
+
+.emoticonType button:hover {
+	color: #FFF;
+	background: #419fd9;
+}
+
+.emojiList, .stickerList {
+	width: 100%;
+	height: 150px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.emojiList .pick {
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+	transition: all 0.15s ease-in-out;
+}
+
+.emojiList .pick:hover {
+	background: #DDD;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+
+.stickerList .pick {
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 65%;
+	transition: all 0.15s ease-in-out;
+}
+
+.stickerList .pick:hover {
+	background: #DDD;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 65%;
+}
+
+
+/* hidden, while not complete */
+.stickerList {
+	display: none;
+}
+
+/* CSS FOR THE EMOJI IMAGES, JUST SOME */
+
+#smileface {
+	background-image: url("https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/grinning-face_1f600.png");
+}
+
+#grinningface {
+	background-image: url("https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/grinning-face-with-smiling-eyes_1f601.png");
+}
+
+#tearjoyface {
+	background-image: url("https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/face-with-tears-of-joy_1f602.png");
+}
+
+#rofl {
+	background-image: url("https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/rolling-on-the-floor-laughing_1f923.png");
+}
+
+#somface {
+	background-image: url("https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/smiling-face-with-open-mouth_1f603.png");
+}
+
+#swfface {
+	background-image: url("https://emojipedia-us.s3.amazonaws.com/thumbs/120/apple/96/smiling-face-with-open-mouth-and-smiling-eyes_1f604.png");
+}
+
+/* NIGHT MODE THEMING */
+.DarkTheme,
+.DarkTheme .mainApp {
+	background: #222;
+}
+
+/* SOLVING RESPONSIVE DESIGN ISSUES */
+@media screen and (max-width: 1180px) {
+	.config {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.config {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	body {
+		font-size: 14px;
+	}
+
+	.msg {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.leftPanel {
+		width: 80px;
+	}
+
+	.rightPanel {
+		width: calc(100% - 81px);
+	}
+
+	.msg {
+		width: auto;
+		max-width: 60%;
+	}
+
+	.profile .changePic, .profile .edit {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.profile .edit {
+		margin-left: 5px;
+	}
+
+	.searchChats,
+	.chatButton > .name,
+	.chatButton > .message,
+	.chatButton > .status {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.switchMobile {
+		display: block;
+	}
+
+	.leftPanel, .rightPanel, .menuWrap, .config, .overlay {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.switchMobile {
+		width: calc(220px - 20px);
+	}
+}
+
+.follow {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #419fd9;
+	color: white;
+}
+
+.following {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #a8a8a8;
+	color: rgb(15, 0, 76);
+}
