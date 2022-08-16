@@ -56,7 +56,7 @@ const Content = () => {
                     setImgs(data)
                 }
             })
-    }, [img]);
+    }, []);
 
     // ALL USER
     useEffect(() => {
