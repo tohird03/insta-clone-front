@@ -22,12 +22,12 @@ const Content = () => {
     const [allUser, setAllUser] = useState([])
     const [commentBody, setCommentBody] = useState(false)
 
-    useEffect(() => {
+    decoded && useEffect(() => {
         fetch("http://localhost:9000/userFound", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
-                "email": decoded?.user_email
+                "email": decoded.user_email
             }
         })
             .then(res => res.json())
