@@ -53,10 +53,10 @@ const Content = () => {
                 if (!data) {
                     return
                 } else {
-                    setImgs(data.reverse())
+                    setImgs(data)
                 }
             })
-    }, []);
+    }, [img]);
 
     // ALL USER
     useEffect(() => {
