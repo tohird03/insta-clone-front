@@ -13,7 +13,7 @@ const Login = () => {
 
         const { email, name, password, reset_password } = e.target
 
-        fetch("http://localhost:9000/userRegester", {
+        fetch("https://insta-oo3.herokuapp.com/userRegester", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
@@ -47,7 +47,7 @@ const Login = () => {
 
         const { name, password } = e.target
 
-        fetch("http://localhost:9000/userLogin", {
+        fetch("https://insta-oo3.herokuapp.com/userLogin", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"

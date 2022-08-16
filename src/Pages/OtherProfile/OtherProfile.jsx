@@ -7,7 +7,7 @@ const OtherProfile = () => {
     const { userId } = useParams()
     console.log(userId);
     useEffect(() => {
-        fetch(`http://localhost:9000/otherUser/${userId}`, {
+        fetch(`https://insta-oo3.herokuapp.com/otherUser/${userId}`, {
             method: "GET",
             headers: {
                 "Content-type": "application/json",

@@ -14,7 +14,7 @@ const Header = () => {
     const { setLogin } = useContext(Context)
     // USER ABOUT
     useEffect(() => {
-        fetch("http://localhost:9000/user", {
+        fetch("https://insta-oo3.herokuapp.com/user", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -57,7 +57,7 @@ const Header = () => {
         formData.append('title', title.value)
 
         try {
-            const res = await axios.post('http://localhost:9000/posts', formData, {
+            const res = await axios.post('https://insta-oo3.herokuapp.com/posts', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -80,7 +80,7 @@ const Header = () => {
         formData.append('author', author.value)
 
         try {
-            const res = await axios.post('http://localhost:9000/profile', formData, {
+            const res = await axios.post('https://insta-oo3.herokuapp.com/profile', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

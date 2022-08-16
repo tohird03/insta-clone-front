@@ -14,7 +14,7 @@ const Followers = () => {
     const [user, setUser] = useState()
 
     useEffect(() => {
-        fetch("http://localhost:9000/userFound", {
+        fetch("https://insta-oo3.herokuapp.com/userFound", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -32,7 +32,7 @@ const Followers = () => {
     }, [decoded]);
 
     useEffect(() => {
-        fetch(`http://localhost:9000/followers/${userId}`, {
+        fetch(`https://insta-oo3.herokuapp.com/followers/${userId}`, {
             method: "GET",
             headers: {
                 "Content-type": "application/json"
@@ -51,7 +51,7 @@ const Followers = () => {
 
     // FOLLOWERS
     const handleFollow = (e) => {
-        fetch(`http://localhost:9000/followers`, {
+        fetch(`https://insta-oo3.herokuapp.com/followers`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
@@ -67,7 +67,7 @@ const Followers = () => {
                     console.log(data);
                     return
                 } else {
-                    fetch(`http://localhost:9000/followers/${userId}`, {
+                    fetch(`https://insta-oo3.herokuapp.com/followers/${userId}`, {
                         method: "GET",
                         headers: {
                             "Content-type": "application/json"

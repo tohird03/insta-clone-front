@@ -22,8 +22,8 @@ const Content = () => {
     const [allUser, setAllUser] = useState([])
     const [commentBody, setCommentBody] = useState(false)
 
-    decoded && useEffect(() => {
-        fetch("http://localhost:9000/userFound", {
+    useEffect(() => {
+        fetch("https://insta-oo3.herokuapp.com/userFound", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -38,7 +38,7 @@ const Content = () => {
 
     // ALL POST
     useEffect(() => {
-        fetch("http://localhost:9000/posts", {
+        fetch("https://insta-oo3.herokuapp.com/posts", {
             method: "GET",
             headers: {
                 "Content-type": "application/json"
@@ -52,7 +52,7 @@ const Content = () => {
 
     // ALL USER
     useEffect(() => {
-        fetch("http://localhost:9000/users", {
+        fetch("https://insta-oo3.herokuapp.com/users", {
             method: "GET",
             headers: {
                 "Content-type": "application/json"
@@ -68,7 +68,7 @@ const Content = () => {
     const handleLikes = (e) => {
         e.preventDefault()
         // console.log(userProfile);
-        fetch("http://localhost:9000/likes", {
+        fetch("https://insta-oo3.herokuapp.com/likes", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
@@ -87,7 +87,7 @@ const Content = () => {
     // ADD POST
     const handleAddPost = (e) => {
         e.preventDefault()
-        fetch("http://localhost:9000/likesuser", {
+        fetch("https://insta-oo3.herokuapp.com/likesuser", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
@@ -114,7 +114,7 @@ const Content = () => {
         setCommentBody(true)
         window.localStorage.setItem("postId", e.target.id)
 
-        fetch(`http://localhost:9000/comment/${e.target.id}`, {
+        fetch(`https://insta-oo3.herokuapp.com/comment/${e.target.id}`, {
             method: "GET",
             headers: {
                 "Content-type": "application/json"
@@ -132,7 +132,7 @@ const Content = () => {
     // ADD COMMENT
     const handleCommentAdd = (e, postId) => {
         if (e.key === "Enter") {
-            fetch(`http://localhost:9000/comment/`, {
+            fetch(`https://insta-oo3.herokuapp.com/comment/`, {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"
@@ -154,7 +154,7 @@ const Content = () => {
 
     // FOLLOWERS
     const handleFollow = (e) => {
-        fetch(`http://localhost:9000/followers`, {
+        fetch(`https://insta-oo3.herokuapp.com/followers`, {
             method: "POST",
             headers: {
                 "Content-type": "application/json"

@@ -6,7 +6,7 @@ function Provider({children}){
     let [login, setLogin] = useState(null)
     let [ userProfile, setUserProfile] = useState({})
     useEffect(() => {
-        fetch("http://localhost:9000/getlogin", {
+        fetch("https://insta-oo3.herokuapp.com/getlogin", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
