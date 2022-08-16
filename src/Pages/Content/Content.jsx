@@ -56,7 +56,7 @@ const Content = () => {
                     setImgs(data)
                 }
             })
-    }, []);
+    }, [img]);
 
     // ALL USER
     useEffect(() => {
@@ -214,7 +214,7 @@ const Content = () => {
         <Header />
         <div className='container d-flex content__container'>
             <main className='content__main'>
-                {img && img?.reverse()?.map((e, i) => {
+                {img && img?.map((e, i) => {
 
                     return e.author && <div class="box-container mb-3">
 
@@ -252,6 +252,7 @@ const Content = () => {
                         </div>
 
                         <img src={e?.img} height="50" />
+
                         <div class="interactions">
                             <div class="interactions-icons">
                                 <div className='d-flex align-items-center'>
